@@ -51,6 +51,7 @@ Run the "build.ps1" script.
 
 ## Project Structure
 
+```
 ElectronReact_Preset/
 ├── assets/
 │   └── icon.png
@@ -77,10 +78,12 @@ ElectronReact_Preset/
 ├── stop.ps1
 ├── build.ps1
 └── clean.ps1
+```
 
 ## License
 
 
 MIT
+
 
 
