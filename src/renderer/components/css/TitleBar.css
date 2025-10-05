@@ -1,0 +1,63 @@
+.titlebar-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background: rgb(16, 16, 16);
+	color: rgb(255, 255, 255);
+	padding: 0px 0px 0px 2px;
+	-webkit-app-region: drag;
+	user-select: none;
+	height: 32px;
+	z-index: 1000;
+	border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+.titlebar-buttons {
+	background-color: rgb(16, 16, 16);
+	color: rgb(255, 255, 255);
+	display: flex;
+	-webkit-app-region: no-drag;
+	margin-left: auto;
+}
+
+.titlebar-buttons button {
+    background: rgb(16, 16, 16);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    cursor: pointer;
+	height: 32px;
+	width: 48px;
+	border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+.titlebar-buttons button:hover {
+    background: rgb(32, 32, 32);
+}
+
+.titlebar-buttons button:active {
+	background: rgb(64, 64, 64);
+}
+
+.titlebar-buttons .quit-button:hover {
+	background: rgb(196, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+.titlebar-buttons .quit-button:active {
+	background: rgb(128, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+.titlebar-icon {
+    height: 28px;
+    width: 28px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
