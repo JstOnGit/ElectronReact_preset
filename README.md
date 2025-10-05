@@ -27,26 +27,26 @@ npm install
 
 Run the "run.ps1" script.
 ```sh
-run.ps1
+.\run.ps1
 ```
 
 ### to force stop
 
 Run the "stop.ps1" script.
 ```sh
-stop.ps1
+.\stop.ps1
 ```
 
 ### Build for production
 
 Run the "build.ps1" script.
 ```sh
-build.ps1
+.\build.ps1
 ```
 
 ### To clean the project
 ```sh
-clean.ps1
+.\clean.ps1
 ```
 
 ## Project Structure
@@ -83,3 +83,4 @@ clean.ps1
 
 
 MIT
+
