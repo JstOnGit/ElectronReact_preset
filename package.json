@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build": "vite build",
-    "dev": "cross-env NODE_ENV=development concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\""
+    "dev": "node scripts/dev.js"
   },
   "keywords": [
     "Electron",
@@ -22,6 +22,7 @@
     "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
+    "dotenv": "^16.0.0",
     "@babel/preset-env": "^7.28.3",
     "@babel/preset-react": "^7.27.1",
     "@vitejs/plugin-react": "^5.0.3",

@@ -3,3 +3,6 @@ node_modules/
 
 # Ignore package-lock.json
 package-lock.json
+
+# Local environment variables (copy .env.example to .env and customise)
+.env

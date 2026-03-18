@@ -2,6 +2,32 @@
 
 Preset for an Electron application integrated with React.
 
+## Configuring a Custom Dev Server IP / Port
+
+By default the Vite development server listens on `localhost:5173`.
+To use a different IP address or port (e.g. to bind to a LAN interface so other devices on your network can connect), create a `.env` file in the project root:
+
+```sh
+cp .env.example .env
+```
+
+Then edit `.env` and set the values you need:
+
+```dotenv
+DEV_HOST=192.168.1.100   # IP address or hostname to listen on
+DEV_PORT=5173            # port number
+```
+
+> **Tip:** Set `DEV_HOST=0.0.0.0` to listen on **all** network interfaces.
+
+After saving `.env`, run the app in development mode as usual:
+
+```sh
+.\run.ps1
+```
+
+The Vite server and the Electron window will both use the IP/port you specified.
+
 ## Features
 
 - Custom title bar with window controls
