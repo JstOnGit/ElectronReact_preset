@@ -1,6 +1,9 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
+// Load .env file so DEV_HOST / DEV_PORT are available when running in development
+require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
+
 let win;
 
 function createWindow() {
@@ -17,7 +20,9 @@ function createWindow() {
   });
 
   if (process.env.NODE_ENV === 'development') {
-    win.loadURL('http://localhost:5173');
+    const devHost = process.env.DEV_HOST || 'localhost';
+    const devPort = process.env.DEV_PORT || '5173';
+    win.loadURL(`http://${devHost}:${devPort}`);
   } else {
     win.loadFile(path.join(__dirname, '../dist/index.html'));
   }
